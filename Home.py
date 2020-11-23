@@ -1,5 +1,5 @@
 from flask import Flask, Response,render_template, url_for, session,redirect
-import cv2
+#import cv2
 from authlib.integrations.flask_client import OAuth
 from LoginChecker import login_required
 
@@ -33,7 +33,7 @@ def index():
     return render_template('index.html')
 
 @app.route('/video')
-#@login_required
+@login_required
 def videoPage():
     email = dict(session).get('email', None)
     return render_template('Video.html')
