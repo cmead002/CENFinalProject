@@ -7,7 +7,7 @@ from flask_ngrok import run_with_ngrok
 
 app = Flask(__name__)
 app.secret_key = 'random secret'
-video = cv2.VideoCapture(0)
+#video = cv2.VideoCapture(0)
 run_with_ngrok(app)
 #oauth config
 oauth = OAuth(app)
