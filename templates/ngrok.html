@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video</title>
+</head>
+  <body>
+    <h1>3289481 Chris' Live Webcam</h1>
+    <img id="bg" src="{{ url_for('video_feed') }}">
+  </body>
+  <body>
+    <h1>3289481 Chris' Live Webcam</h1>
+    <img id="bg" src="http://e57ac73be28f.ngrok.io/video_feed">
+  </body>
+<body>
+  <h2>Serving video files from Flask</h2>
+  <video width="640" height="360" controls>
+    <source src= "{{ url_for('static',filename='MakingFinalProject.mp4' ) }}" type="video/mp4">
+  </video>
+  <video width="640" height="360" controls>
+    <source src="http://e57ac73be28f.ngrok.io/static/MakingFinalProject.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</body>
+</html>
