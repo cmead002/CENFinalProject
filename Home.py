@@ -74,4 +74,5 @@ def logout():
         session.pop(key)
     return redirect('/')
 
-app.run()
+if __name__ == "__main__":
+    app.run(host="http://e57ac73be28f.ngrok.io")
