@@ -75,4 +75,4 @@ def logout():
     return redirect('/')
 
 if __name__ == "__main__":
-    app.run(host="http://e57ac73be28f.ngrok.io")
+    app.run(host="http://87e567ca6ab4.ngrok.io")
